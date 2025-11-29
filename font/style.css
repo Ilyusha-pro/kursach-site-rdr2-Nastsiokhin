@@ -1,0 +1,237 @@
+@font-face {
+  font-family: 'RDR2';
+  src: url(../font/red-dead-redemption/CHINESER.TTF);
+}
+.page {
+    margin: 0;
+    color: white;
+}
+
+.page
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header {
+display: flex;
+align-items: center;
+flex-direction: row;
+gap: 15px;
+font-family: 'RDR2';
+}
+.menu-icon {
+font-size: 22px;
+cursor: pointer;
+}
+.logo-text {
+font-family: 'RDR2';
+font-size: 22px;
+letter-spacing: 1px;
+}
+  .hero {
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+    gap: 19px;
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+
+  .hero-img {
+    width: 336px;
+    height: 419px;
+  }
+
+  .hero-panel {
+    max-width: 335px;
+    max-height: 418px;
+    margin-top: 5px;
+    text-align: left;
+  }
+
+  .hero-panel h1 {
+    font-size: 22px;
+    letter-spacing: 4px;
+    font-family: 'RDR2';
+    text-transform: uppercase;
+  }
+
+  .hero-panel label {
+    display: block;
+    background: transparent;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-size: 14px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    padding: 10px;
+    cursor: pointer;
+    width: 312px;
+    height: 19px;
+  }
+
+  .hero-panel input[type="radio"] {
+    display: none;
+  }
+  .hero-panel input[type="radio"]:checked + label {
+    background: #b00;
+    border-color: #b00;
+  }
+
+  select {
+    width: 334px;
+    padding: 9px 11px 12px 5px;
+    letter-spacing: 1px;
+    background: transparent;
+    color: white;
+    border: 1px solid #fff;
+    margin-bottom: 9px;
+  }
+
+  .select__first {
+    margin-top: 14px;
+  }
+
+  button {
+    width: 334px;
+    height: 48px;
+    padding: 3px 11px 3px 11px;
+    background: #c00;
+    font-family: 'RDR2';
+    letter-spacing: 2px;
+    border: none;
+    color: #fff;
+    font-size: 27px;
+    cursor: pointer;
+    border-radius: 1px;
+    margin-top: 10px;
+  }
+
+  .edition-note{
+    display: flex;
+    margin-top: 9px;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+  }
+
+section .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    gap: 20px;
+}
+
+.hero > .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 19px;
+    flex-wrap: wrap;
+}
+
+.ultimate {
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.ultimate .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+
+.ultimate-title {
+  font-family: 'RDR2';
+  font-size: 50px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 30px 0px -20px 0px;
+}
+
+.ultimate-subtitle {
+  font-size: 16px;
+  text-align: center;
+  line-height: 22px;
+  margin-bottom: -40px;
+  max-width: 700px;
+  width: 785px;
+  height: 44px;
+}
+
+
+
+.ultimate-heading {
+  font-family: 'RDR2';
+  font-size: 29px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+
+
+.ultimate-grid {
+    display: grid;
+    gap: 0px 54px;
+    margin-bottom: -56px;
+    justify-content: center;
+}
+
+.ultimate-grid__small {
+    display: grid;
+    text-align: center;
+    gap: 0px 12px;
+    justify-content: center;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 300px);
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 215px);
+}
+
+
+.item {
+    display: flex;         
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img {
+  width: 333px;
+  height: 193px;
+}
+.item__small img{
+  width: 215px;
+  height: 114px;
+}
+
+.item p {
+  font-family: 'RDR2';
+  margin-top: 10px;
+  text-align: center;
+  font-size: 21px;
+  line-height: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.item__small p{
+  font-size: 17px;
+  font-family: 'RDR2';
+}
+

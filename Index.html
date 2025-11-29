@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age</title>
+  <link rel="stylesheet" href="./scss/style.css">
+</head>
+<body class="page page--age">
+  <section class="age-confirm">
+  <div class="container">
+    <div class="age-confirm__logo">
+      <img class="age-confirm__img" src="./Исходники/Age/logo rdr age.png" alt="logo">
+      <h1 class="age-confirm__title">To view this page, please enter your birthday</h1>
+    </div>
+
+    <form class="age-confirm__form">
+      <div class="age-confirm__selects">
+
+        <select class="age-confirm__select age-confirm__select--month" name="month" aria-label="Month">
+          <option>January</option>
+        </select>
+
+        <select class="age-confirm__select age-confirm__select--day" id="day" name="day" aria-label="Day"></select>
+        <select class="age-confirm__select age-confirm__select--year" id="year" name="year" aria-label="Year"></select>
+
+      </div>
+
+      <button class="age-confirm__btn" type="submit">SUBMIT</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer footer__age">
+  <a class="footer__link" href="#"><b>Privacy Legal</b></a>
+</footer>
+
+  <script src="./js/age.js"></script>
+</body>
+</html>

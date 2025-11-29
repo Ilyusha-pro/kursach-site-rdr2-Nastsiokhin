@@ -1,0 +1,110 @@
+
+.footer--buy {
+  padding: 0px;
+  background-image: url(../Исходники/Buy/fotter2.png);
+  background-size: cover;
+  max-height: 244px;
+  width: 100%;
+}
+.footer--main {
+  padding: 1px 14px 16px;
+  background-image: url(../Исходники/main/fotter.png);
+  width: 98.5%;
+}
+.footer__age{
+  background-color: #2E0002;
+  margin-top: 240px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 40px;
+  align-items: unset;
+  padding: 0px 27px 0px 0px;
+}
+
+.footer__esrb {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  padding-top: 146px;
+}
+
+.footer__esrb-img {
+  width: 166px;
+  height: 85px;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__logo-wrapper {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-top: 43px;
+}
+
+.footer__logo {
+  width: 75px;
+  height: 74px;
+}
+
+.footer__subtitle {
+  font-family: 'RDR2';
+  font-size: 48px;
+  letter-spacing: 2px;
+  margin: 10px;
+}
+
+.footer__announcement {
+  font-size: 12px;
+  font-family: 'Oswald', sans-serif;
+  color: #ffffff;
+}
+
+.footer__cta {
+  text-transform: uppercase;
+  font-size: 14px;
+
+  img {
+    width: 200px;
+    height: 40px;
+    margin-bottom: 6px;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+}
+
+.footer__social-icons {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s ease;
+}
+
+.footer__social-link:hover img {
+  transform: scale(1.2) translateY(-2px);
+}
+
+.footer__icon {
+  margin: 0px;
+}
+
+img {
+  &[alt="Facebook"], &[alt="Twitter"], &[alt="Instagram"], &[alt="YouTube"], &[alt="Twitch"] {
+    width: 35px;
+    height: 32px;
+  }
+}

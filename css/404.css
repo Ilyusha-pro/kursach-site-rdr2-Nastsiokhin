@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'RDR2';
+    src: url(../font/red-dead-redemption/CHINESER.TTF);
+  }
+  body{
+    margin: 0px;
+    font-family: 'RDR2';
+  }
+  
+  .error-rdr {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Исходники/404/Background.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-repeat: repeat;
+    font-family: 'RDR2', serif;
+    color: #fff;
+  }
+  
+  .error-rdr__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(35deg, #600004, #2E0002);
+    opacity: 0.5;
+  }
+  
+  .error-rdr__img {
+    position: absolute;
+    object-fit: contain;
+  }
+  img[alt="Arthur"] {
+    bottom: 0;
+    right: 8%;
+    height: 80%;
+  }
+  img[alt="Sadie"] {
+    bottom: 0;
+    right: 68%;
+    height: 80%;
+  }
+  
+  .error-rdr__content {
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .error-rdr__title {
+    margin: 0;
+    letter-spacing: 10px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.1;
+    margin-bottom: 50px;
+  }
+  
+  .error-rdr__title .code {
+    display: block;
+    font-size: 200px;   
+    font-weight: 900;
+  }
+  
+  .error-rdr__title .text {
+    display: block;
+    font-size: 48px;    
+    font-weight: bold;
+    letter-spacing: 5px;
+  }
+  
+  
+  .error-rdr__text {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 5px;
+  }
+  
+  .error-rdr__btn {
+    margin-top: 30px;
+    display: inline-block;
+    padding: 12px 30px;
+    background: #D20204;
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: transform .2s ease;
+  }
+  
+  .error-rdr__btn:hover {
+    transform: scale(1.07);
+    background: #ff0000;
+  }
+
+@media (max-width: 1280px) {
+  img[alt="Arthur"] {
+    right: 4%;
+    height: 75%;
+  }
+  img[alt="Sadie"] {
+    right: 65%;
+    height: 75%;
+  }
+  .error-rdr__title .code {
+    font-size: 160px;
+  }
+  .error-rdr__title .text {
+    font-size: 40px;
+  }
+  .error-rdr__text {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1024px) {
+  img[alt="Arthur"] {
+    right: 2%;
+    height: 70%;
+  }
+  img[alt="Sadie"] {
+    right: 65%;
+    height: 70%;
+  }
+  .error-rdr__title .code {
+    font-size: 100px;
+  }
+  .error-rdr__title .text {
+    font-size: 16px;
+  }
+  .error-rdr__text {
+    font-size: 24px;
+  }
+  .error-rdr__btn {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  img[alt="Sadie"] {
+    display: none;
+  }
+  img[alt="Arthur"] {
+
+    display: none;
+  }
+  .error-rdr__title .code {
+    font-size: 110px;
+  }
+  .error-rdr__title .text {
+    font-size: 26px;
+  }
+  .error-rdr__text {
+    font-size: 20px;
+  }
+  .error-rdr__btn {
+    padding: 10px 24px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .error-rdr__title .code {
+    font-size: 80px;
+  }
+  .error-rdr__title .text {
+    font-size: 19px;
+    letter-spacing: 2px;
+  }
+  .error-rdr__text {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  .error-rdr__btn {
+    font-size: 16px;
+    padding: 8px 18px;
+  }
+  img[alt="Arthur"] {
+    height: 55%;
+  }
+}

@@ -1,0 +1,57 @@
+.header {
+  width: 100%;
+  background: #000;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  width: 100%;
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header__menu {
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.header__title {
+  font-family: 'RDR2';
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #fff;
+  transition: 0.2s;
+  text-decoration: none;
+
+  &:hover {
+    color: #ff0000;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 39px;
+  font-family: 'RDR2';
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--red {
+  background: #D20204;
+  color: #000;
+}

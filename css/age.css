@@ -1,0 +1,240 @@
+@font-face {
+  font-family: 'RDR2';
+  src: url(../font/red-dead-redemption/CHINESER.TTF);
+}
+.page{
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'RDR2';
+}
+.page--age {
+  background-color: #2E0002;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.age-confirm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 159px;
+}
+
+.age-confirm__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.age-confirm__img {
+  width: 737px;
+  height: 292px;
+  margin-top: 22px;
+}
+
+.age-confirm__title {
+  font-size: 42px;
+  letter-spacing: 4px;
+  margin-top: 20px;
+}
+
+.age-confirm__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 50px;
+}
+
+.age-confirm__selects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.age-confirm__select {
+  padding: 3px;
+  height: 38px;
+  font-family: sans-serif;
+  background-color: black;
+  border: 2px solid #ff0000;
+  color: white;
+  cursor: pointer;
+  text-transform: none;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+.age-confirm__select--month {
+  width: 170px;
+}
+
+.age-confirm__select--day {
+  width: 65px;
+}
+
+.age-confirm__select--year {
+  width: 97px;
+}
+
+.age-confirm__btn {
+  margin-top: 37px;
+  background-color: #ff0000;
+  border: none;
+  width: 164px;
+  height: 59px;
+  color: black;
+  font-family: inherit;
+  font-size: 35px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.age-confirm__btn:hover {
+  color: white;
+}
+
+.footer {
+  margin-top: 240px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.footer__link {
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.footer__link:hover {
+  color: white;
+}
+
+@media (max-width: 1280px) {
+  .age-confirm__img {
+    width: 600px;
+    height: auto;
+  }
+  .age-confirm__title {
+    font-size: 36px;
+  }
+  .age-confirm__select {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .age-confirm {
+    margin-top: 120px;
+  }
+  .age-confirm__img {
+    width: 500px;
+  }
+  .age-confirm__title {
+    font-size: 30px;
+  }
+  .age-confirm__select {
+    height: 34px;
+    font-size: 20px;
+  }
+  .age-confirm__btn {
+    width: 150px;
+    height: 53px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .age-confirm {
+    margin-top: 90px;
+  }
+  .age-confirm__img {
+    width: 420px;
+  }
+  .age-confirm__title {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  .age-confirm__select {
+    font-size: 18px;
+    width: 140px;
+    height: 32px;
+  }
+  .age-confirm__select--day { width: 60px; }
+  .age-confirm__select--year { width: 85px; }
+
+  .age-confirm__btn {
+    width: 140px;
+    height: 50px;
+    font-size: 26px;
+  }
+
+  .footer {
+    margin-top: 150px;
+  }
+  .footer__link {
+     font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .age-confirm {
+    margin-top: 60px;
+  }
+  .age-confirm__img {
+    width: 300px;
+  }
+  .age-confirm__title {
+    font-size: 1.2rem;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  .age-confirm__select {
+    font-size: 16px;
+    width: 120px;
+    height: 30px;
+  }
+  .age-confirm__select--day { width: 50px; }
+  .age-confirm__select--year { width: 75px; }
+
+  .age-confirm__btn {
+    width: 120px;
+    height: 45px;
+    font-size: 22px;
+  }
+
+  .footer {
+    margin-top: 120px;
+  }
+  .footer__link {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .age-confirm__img {
+    width: 260px;
+  }
+  .age-confirm__title {
+    font-size: 1rem;
+  }
+  .age-confirm__select {
+    font-size: 14px;
+    width: 100px;
+    height: 28px;
+  }
+  .age-confirm__btn {
+    width: 110px;
+    height: 40px;
+    font-size: 18px;
+  }
+}

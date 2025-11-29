@@ -1,0 +1,1565 @@
+@charset "UTF-8";
+.header {
+  width: 100%;
+  background: #000;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  width: 100%;
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header__menu {
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.header__title {
+  font-family: "RDR2";
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #fff;
+  transition: 0.2s;
+  text-decoration: none;
+}
+.header__title:hover {
+  color: #ff0000;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 39px;
+  font-family: "RDR2";
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--red {
+  background: #D20204;
+  color: #000;
+}
+
+.footer--buy {
+  padding: 0px;
+  background-image: url(../Исходники/Buy/fotter2.png);
+  background-size: cover;
+  max-height: 244px;
+  width: 100%;
+}
+
+.footer--main {
+  padding: 1px 14px 16px;
+  background-image: url(../Исходники/main/fotter.png);
+  width: 98.5%;
+}
+
+.footer__age {
+  background-color: #2E0002;
+  margin-top: 240px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 40px;
+  align-items: unset;
+  padding: 0px 27px 0px 0px;
+}
+
+.footer__esrb {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  padding-top: 146px;
+}
+
+.footer__esrb-img {
+  width: 166px;
+  height: 85px;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__logo-wrapper {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-top: 43px;
+}
+
+.footer__logo {
+  width: 75px;
+  height: 74px;
+}
+
+.footer__subtitle {
+  font-family: "RDR2";
+  font-size: 48px;
+  letter-spacing: 2px;
+  margin: 10px;
+}
+
+.footer__announcement {
+  font-size: 12px;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+}
+
+.footer__cta {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.footer__cta img {
+  width: 200px;
+  height: 40px;
+  margin-bottom: 6px;
+  transition: transform 0.3s ease;
+}
+.footer__cta:hover img {
+  transform: scale(1.05);
+}
+
+.footer__social-icons {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s ease;
+}
+
+.footer__social-link:hover img {
+  transform: scale(1.2) translateY(-2px);
+}
+
+.footer__icon {
+  margin: 0px;
+}
+
+img[alt=Facebook], img[alt=Twitter], img[alt=Instagram], img[alt=YouTube], img[alt=Twitch] {
+  width: 35px;
+  height: 32px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "RDR2";
+  src: url(../font/red-dead-redemption/CHINESER.TTF);
+}
+.page {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "RDR2";
+}
+.page--age {
+  background-color: #2E0002;
+  background-image: none;
+}
+
+.age-confirm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 159px;
+}
+.age-confirm__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.age-confirm__img {
+  width: 737px;
+  height: 292px;
+  margin-top: 22px;
+}
+.age-confirm__title {
+  font-size: 42px;
+  letter-spacing: 4px;
+  margin-top: 20px;
+  font-family: "RDR2";
+}
+.age-confirm_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 50px;
+}
+.age-confirm__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 50px;
+}
+.age-confirm__selects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.age-confirm__select {
+  padding: 3px;
+  height: 38px;
+  font-family: sans-serif;
+  background-color: black;
+  border: 2px solid #ff0000;
+  color: white;
+  cursor: pointer;
+  text-transform: none;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+.age-confirm__select--month {
+  width: 170px;
+}
+.age-confirm__select--day {
+  width: 65px;
+}
+.age-confirm__select--year {
+  width: 97px;
+}
+.age-confirm__select__btn {
+  font-family: "RDR2";
+  margin-top: 37px;
+  background-color: #ff0000;
+  border: none;
+  width: 164px;
+  height: 59px;
+  color: black;
+  font-size: 35px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+.age-confirm__select__btn:hover {
+  color: white;
+}
+.age-confirm__select__btn {
+  font-family: "RDR2";
+  margin-top: 37px;
+  background-color: #ff0000;
+  border: none;
+  width: 164px;
+  height: 59px;
+  color: black;
+  font-size: 35px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+.age-confirm__select__btn:hover {
+  color: white;
+}
+
+.age-confirm__btn {
+  font-family: "RDR2";
+  margin-top: 37px;
+  background-color: #ff0000;
+  border: none;
+  width: 164px;
+  height: 59px;
+  color: black;
+  font-size: 35px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+.age-confirm__btn:hover {
+  color: white;
+}
+
+.footer__link {
+  font-family: "RDR2";
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.footer__link:hover {
+  color: white;
+}
+
+@media (max-width: 1280px) {
+  .age-confirm__img {
+    width: 600px;
+    height: auto;
+  }
+  .age-confirm__title {
+    font-size: 36px;
+  }
+  .age-confirm__select {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1024px) {
+  .age-confirm {
+    margin-top: 120px;
+  }
+  .age-confirm__img {
+    width: 500px;
+  }
+  .age-confirm__title {
+    font-size: 30px;
+  }
+  .age-confirm__select {
+    height: 34px;
+    font-size: 20px;
+  }
+  .age-confirm__btn {
+    width: 150px;
+    height: 53px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .age-confirm {
+    margin-top: 90px;
+  }
+  .age-confirm__img {
+    width: 420px;
+  }
+  .age-confirm__title {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  .age-confirm__select {
+    font-size: 18px;
+    width: 140px;
+    height: 32px;
+  }
+  .age-confirm__select--day {
+    width: 60px;
+  }
+  .age-confirm__select--year {
+    width: 85px;
+  }
+  .age-confirm__btn {
+    width: 140px;
+    height: 50px;
+    font-size: 26px;
+  }
+  .footer {
+    margin-top: 150px;
+  }
+  .footer__link {
+    font-size: 25px;
+  }
+}
+@media (max-width: 480px) {
+  .age-confirm {
+    margin-top: 60px;
+  }
+  .age-confirm__img {
+    width: 300px;
+  }
+  .age-confirm__title {
+    font-size: 1.2rem;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  .age-confirm__select {
+    font-size: 16px;
+    width: 120px;
+    height: 30px;
+  }
+  .age-confirm__select--day {
+    width: 50px;
+  }
+  .age-confirm__select--year {
+    width: 75px;
+  }
+  .age-confirm__btn {
+    width: 120px;
+    height: 45px;
+    font-size: 22px;
+  }
+  .footer {
+    margin-top: 120px;
+  }
+  .footer__link {
+    font-size: 15px;
+  }
+}
+@media (max-width: 360px) {
+  .age-confirm__img {
+    width: 260px;
+  }
+  .age-confirm__title {
+    font-size: 1rem;
+  }
+  .age-confirm__select {
+    font-size: 14px;
+    width: 100px;
+    height: 28px;
+  }
+  .age-confirm__btn {
+    width: 110px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+.header {
+  width: 100%;
+  background: #000;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  width: 100%;
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header__menu {
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.header__title {
+  font-family: "RDR2";
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #fff;
+  transition: 0.2s;
+  text-decoration: none;
+}
+.header__title:hover {
+  color: #ff0000;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 39px;
+  font-family: "RDR2";
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--red {
+  background: #D20204;
+  color: #000;
+}
+
+.footer--buy {
+  padding: 0px;
+  background-image: url(../Исходники/Buy/fotter2.png);
+  background-size: cover;
+  max-height: 244px;
+  width: 100%;
+}
+
+.footer--main {
+  padding: 1px 14px 16px;
+  background-image: url(../Исходники/main/fotter.png);
+  width: 98.5%;
+}
+
+.footer__age {
+  background-color: #2E0002;
+  margin-top: 240px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 40px;
+  align-items: unset;
+  padding: 0px 27px 0px 0px;
+}
+
+.footer__esrb {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  padding-top: 146px;
+}
+
+.footer__esrb-img {
+  width: 166px;
+  height: 85px;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__logo-wrapper {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-top: 43px;
+}
+
+.footer__logo {
+  width: 75px;
+  height: 74px;
+}
+
+.footer__subtitle {
+  font-family: "RDR2";
+  font-size: 48px;
+  letter-spacing: 2px;
+  margin: 10px;
+}
+
+.footer__announcement {
+  font-size: 12px;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+}
+
+.footer__cta {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.footer__cta img {
+  width: 200px;
+  height: 40px;
+  margin-bottom: 6px;
+  transition: transform 0.3s ease;
+}
+.footer__cta:hover img {
+  transform: scale(1.05);
+}
+
+.footer__social-icons {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s ease;
+}
+
+.footer__social-link:hover img {
+  transform: scale(1.2) translateY(-2px);
+}
+
+.footer__icon {
+  margin: 0px;
+}
+
+img[alt=Facebook], img[alt=Twitter], img[alt=Instagram], img[alt=YouTube], img[alt=Twitch] {
+  width: 35px;
+  height: 32px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "RDR2";
+  src: url(../font/red-dead-redemption/CHINESER.TTF);
+}
+.page {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.page--main {
+  background: #000;
+  color: #fff;
+}
+
+.page--main {
+  background: #000;
+  color: #fff;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.banner {
+  background-image: url(../Исходники/main/Banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 110vh;
+  width: 100%;
+  position: relative;
+}
+
+.banner__content {
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.banner__title {
+  font-family: "Arial";
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 143px;
+}
+
+.banner__text {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 20px 140px;
+}
+
+.gallery {
+  margin: 0;
+  text-align: center;
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 442px);
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card {
+  width: 442px;
+  height: 506px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(139, 0, 0, 0.3);
+}
+
+.card__title {
+  font-size: 34px;
+  font-weight: bold;
+  font-family: "RDR2";
+  margin: 15px;
+  letter-spacing: 1px;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.card:hover .card__title {
+  color: #ff0000;
+}
+
+.card__img {
+  width: 442px;
+  height: 406px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer__top {
+  margin-top: 110px;
+  font-family: "RDR2";
+}
+
+.footer__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 83px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 13px;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 40px;
+  align-items: end;
+  padding-right: 27px;
+  margin-top: 90px;
+}
+
+.footer__esrb-img {
+  width: 166px;
+  height: 85px;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__subtitle {
+  font-family: "RDR2";
+  font-size: 48px;
+  letter-spacing: 2px;
+  margin: 10px;
+}
+
+.footer__announcement {
+  font-size: 12px;
+  font-family: "Oswald", sans-serif;
+}
+
+.footer__logo-wrapper {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.footer__logo {
+  width: 75px;
+  height: 74px;
+}
+
+.footer__icons {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.footer__icon {
+  width: 35px;
+  height: 32px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer__icon-link:hover .footer__icon {
+  transform: scale(1.2) translateY(-2px);
+}
+
+.mail-btn img {
+  width: 200px;
+  height: 40px;
+  margin-bottom: 6px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.mail-btn:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1280px) {
+  .banner {
+    height: 100vh;
+  }
+  .banner__title {
+    padding: 0 100px;
+  }
+  .banner__text {
+    padding: 30px 194px;
+    font-size: 14px;
+  }
+  .gallery {
+    margin: 45px;
+  }
+  .gallery__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .card, .card__img {
+    width: 100%;
+    height: auto;
+    max-width: 720px;
+  }
+  .footer {
+    width: 98%;
+  }
+  .footer__top {
+    margin-top: 100px;
+  }
+  .footer__grid {
+    margin-top: 90px;
+  }
+}
+@media (max-width: 1024px) {
+  .header__title {
+    font-size: 16px;
+  }
+  .btn {
+    width: 110px;
+    height: 32px;
+    font-size: 16px;
+  }
+  .banner {
+    height: 65vh;
+  }
+  .banner__title, .banner__text {
+    padding: 0 60px;
+    font-size: 12px;
+  }
+  .gallery__grid {
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    justify-items: center;
+  }
+  .card, .card__img {
+    width: 100%;
+    height: auto;
+  }
+  .footer {
+    width: 97%;
+  }
+}
+@media (max-width: 768px) {
+  .btn {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+  }
+  .banner {
+    height: 62vh;
+    background-size: contain;
+    background-position: center top;
+  }
+  .banner__title, .banner__text {
+    padding: 30px 23px;
+    font-size: 20px;
+  }
+  .gallery__grid {
+    grid-template-columns: 1fr;
+    margin-top: 85px;
+  }
+  .footer {
+    width: 95%;
+  }
+  .footer__top {
+    margin-top: 120px;
+  }
+  .footer__title {
+    font-size: 70px;
+    letter-spacing: 6px;
+    text-align: center;
+  }
+  .footer__subtitle {
+    font-size: 60px;
+  }
+  .footer__esrb-img, .footer__logo {
+    display: none;
+  }
+  .footer__grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 35px;
+    padding-right: 0;
+    margin-top: 95px;
+  }
+  .footer__logo-wrapper, .footer__icons {
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .header__title {
+    font-size: 13px;
+  }
+  .btn {
+    width: 88px;
+    height: 28px;
+    font-size: 13px;
+  }
+  .banner {
+    height: 47vh;
+  }
+  .banner__title, .banner__text {
+    padding: 0 10px;
+    font-size: 9px;
+  }
+  .card__title {
+    font-size: 26px;
+  }
+  .footer {
+    width: 94%;
+  }
+  .footer__title {
+    font-size: 60px;
+  }
+  .footer__subtitle {
+    font-size: 35px;
+  }
+}
+@media (max-width: 320px) {
+  .header__title {
+    font-size: 12px;
+  }
+  .banner__title, .banner__text {
+    font-size: 9px;
+    padding: 0 5px;
+  }
+  .footer {
+    width: 92%;
+  }
+  .footer__title {
+    font-size: 47px;
+  }
+  .footer__subtitle {
+    font-size: 21px;
+  }
+}
+.header {
+  width: 100%;
+  background: #000;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  width: 100%;
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header__menu {
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.header__title {
+  font-family: "RDR2";
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #fff;
+  transition: 0.2s;
+  text-decoration: none;
+}
+.header__title:hover {
+  color: #ff0000;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 39px;
+  font-family: "RDR2";
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--red {
+  background: #D20204;
+  color: #000;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "RDR2";
+  src: url(../font/red-dead-redemption/CHINESER.TTF);
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(../Исходники/Buy/bg-buy.jpg);
+  background-size: auto;
+  background-position: top center;
+  background-repeat: repeat;
+  color: white;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.hero {
+  margin-top: 2px;
+  gap: 19px;
+  padding: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+.hero > .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 19px;
+  flex-wrap: wrap;
+}
+.hero__img {
+  width: 336px;
+  height: 419px;
+}
+.hero__form {
+  max-width: 335px;
+  max-height: 418px;
+  margin-top: 5px;
+  text-align: left;
+}
+.hero__title {
+  font-size: 22px;
+  letter-spacing: 4px;
+  font-family: "RDR2";
+  text-transform: uppercase;
+}
+.hero__option {
+  display: block;
+  background: transparent;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-size: 14px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  padding: 10px;
+  cursor: pointer;
+  width: 312px;
+  height: 19px;
+}
+.hero__radio {
+  display: none;
+}
+.hero__radio:checked + .hero__option {
+  background: #b00;
+  border-color: #b00;
+}
+.hero__select {
+  width: 334px;
+  padding: 9px 11px 12px 5px;
+  letter-spacing: 1px;
+  background: transparent;
+  color: white;
+  border: 1px solid #fff;
+  margin-bottom: 9px;
+}
+.hero__select option {
+  background-color: #000;
+  color: #fff;
+}
+.hero__button {
+  display: inline-block;
+  width: 311px;
+  height: 43px;
+  padding: 3px 11px;
+  background: #c00;
+  font-family: "RDR2";
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 27px;
+  text-align: center;
+  line-height: 42px;
+  cursor: pointer;
+  border-radius: 1px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.hero__button:hover {
+  color: black;
+}
+.hero__note {
+  display: flex;
+  margin-top: 9px;
+  align-items: center;
+  flex-direction: column;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: center;
+}
+
+.ultimate {
+  color: #fff;
+  font-family: Arial, sans-serif;
+  border-top: #fff solid 2px;
+}
+.ultimate .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ultimate__title {
+  font-family: "RDR2";
+  font-size: 50px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 14px 0px 0px 0px;
+}
+.ultimate__subtitle {
+  font-size: 14px;
+  text-align: center;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin: 14px;
+}
+.ultimate__heading {
+  font-family: "RDR2";
+  font-size: 29px;
+  margin-top: 0px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.ultimate__grid--large {
+  display: grid;
+  gap: 0px 54px;
+  margin-bottom: -56px;
+  margin-top: -20px;
+  justify-content: center;
+  grid-template-columns: repeat(3, 300px);
+}
+.ultimate__heading--small {
+  font-family: "RDR2";
+  font-size: 29px;
+  padding: 78px 0px 16px 0px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.ultimate__grid--small {
+  display: grid;
+  text-align: center;
+  margin-top: -26px;
+  gap: 0px 12px;
+  justify-content: center;
+  grid-template-columns: repeat(4, 215px);
+}
+.ultimate__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ultimate__item:hover {
+  transform: translateY(-5px);
+}
+.ultimate__img {
+  width: 333px;
+  height: 193px;
+}
+.ultimate__img--small {
+  width: 215px;
+  height: 114px;
+}
+.ultimate__text {
+  font-family: "RDR2";
+  text-align: center;
+  font-size: 18px;
+  margin-top: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.ultimate__text--small {
+  font-size: 15px;
+  margin-top: 15px;
+  font-family: "RDR2";
+}
+
+.warehouse {
+  color: #fff;
+  margin-bottom: 52px;
+}
+.warehouse .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.warehouse__title {
+  font-family: "RDR2";
+  font-size: 57px;
+  letter-spacing: 4px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 20px 0px 0px 0px;
+  text-align: center;
+}
+.warehouse__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 11px;
+  margin-top: 21px;
+}
+.warehouse__item {
+  width: 340px;
+  height: 398px;
+  margin-top: 1px;
+  background-color: #1F1F20;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.warehouse__item:hover {
+  color: #CC0000;
+  text-shadow: #780E0E solid 1px;
+  transform: translateY(-5px);
+}
+.warehouse__item-content {
+  padding: 14px 0px 0px 17px;
+}
+.warehouse__item-img {
+  width: 308px;
+  height: 309px;
+  margin: 19px 0px 7px 17px;
+}
+.warehouse__item-info {
+  font-family: "RDR2";
+  margin: 1px 0px 7px 17px;
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.warehouse__btn {
+  display: inline-block;
+  background: #c20b0b;
+  font-family: "RDR2";
+  text-decoration: none;
+  color: #fff;
+  margin-top: 47px;
+  text-align: center;
+  padding: 18px 0px 0px 0px;
+  font-size: 23px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  width: 423px;
+  height: 42px;
+}
+.warehouse__btn:hover {
+  color: black;
+}
+
+@media (max-width: 1440px) {
+  .ultimate__grid--large {
+    gap: 0 30px;
+  }
+  .warehouse__grid {
+    gap: 20px;
+  }
+}
+@media (max-width: 1280px) {
+  .hero > .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__img, .hero__form {
+    margin: 0 auto;
+  }
+  .ultimate__grid--large {
+    grid-template-columns: repeat(2, 300px);
+    margin-bottom: 30px;
+  }
+  .ultimate__grid--small {
+    grid-template-columns: repeat(2, 215px);
+  }
+  .footer--buy {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .ultimate__title {
+    font-size: 42px;
+  }
+  .ultimate__heading, .ultimate__heading--small {
+    font-size: 22px;
+  }
+  .warehouse__grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .header__title, .hero__title, .hero__title--select {
+    font-size: 18px;
+  }
+  .hero__option, .hero__select, .hero__button {
+    width: 100%;
+  }
+  .warehouse__grid {
+    grid-template-columns: 1fr;
+  }
+  .warehouse__item {
+    width: 100%;
+    max-width: 340px;
+  }
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0;
+    text-align: center;
+  }
+  .footer__esrb, .footer__logo-wrapper {
+    justify-content: center;
+    padding-top: 0;
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    padding: 15px;
+  }
+  .hero__img {
+    width: 500px;
+    height: 622px;
+  }
+  .hero__form {
+    margin: 0 auto;
+  }
+  .hero__title {
+    font-size: 30px;
+  }
+  .hero__button {
+    font-size: 22px;
+  }
+  .ultimate__title {
+    font-size: 34px;
+  }
+  .ultimate__heading, .ultimate__heading--small {
+    font-size: 18px;
+  }
+  .warehouse__title {
+    font-size: 40px;
+  }
+  .warehouse__btn {
+    width: 95%;
+    font-size: 18px;
+  }
+}
+@media (max-width: 360px) {
+  .hero__img {
+    width: 260px;
+  }
+  .hero__button {
+    font-size: 18px;
+    height: 38px;
+    line-height: 38px;
+  }
+}
+@font-face {
+  font-family: "RDR2";
+  src: url(../font/red-dead-redemption/CHINESER.TTF);
+}
+body {
+  margin: 0px;
+  font-family: "RDR2";
+}
+
+.error-rdr {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../Исходники/404/Background.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-repeat: repeat;
+  font-family: "RDR2", serif;
+  color: #fff;
+}
+.error-rdr__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(35deg, #600004, #2E0002);
+  opacity: 0.5;
+}
+.error-rdr__img {
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.error-rdr__content {
+  text-align: center;
+  z-index: 2;
+}
+.error-rdr__title {
+  margin: 0;
+  letter-spacing: 10px;
+  font-family: "Arial", sans-serif;
+  line-height: 1.1;
+  margin-bottom: 50px;
+}
+.error-rdr__title .code {
+  display: block;
+  font-size: 200px;
+  font-weight: 900;
+}
+.error-rdr__title .text {
+  display: block;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.error-rdr__text {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.error-rdr__btn {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 12px 30px;
+  background: #D20204;
+  color: #000;
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  transition: transform 0.2s ease;
+}
+.error-rdr__btn:hover {
+  transform: scale(1.07);
+  background: #ff0000;
+}
+
+img[alt=Arthur] {
+  bottom: 0;
+  right: 8%;
+  height: 80%;
+}
+img[alt=Sadie] {
+  bottom: 0;
+  right: 68%;
+  height: 80%;
+}
+
+@media (max-width: 1280px) {
+  img[alt=Arthur] {
+    right: 4%;
+    height: 75%;
+  }
+  img[alt=Sadie] {
+    right: 65%;
+    height: 75%;
+  }
+  .error-rdr__title .code {
+    font-size: 160px;
+  }
+  .error-rdr__title .text {
+    font-size: 40px;
+  }
+  .error-rdr__text {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1024px) {
+  img[alt=Arthur] {
+    right: 2%;
+    height: 70%;
+  }
+  img[alt=Sadie] {
+    right: 65%;
+    height: 70%;
+  }
+  .error-rdr__title .code {
+    font-size: 100px;
+  }
+  .error-rdr__title .text {
+    font-size: 16px;
+  }
+  .error-rdr__text {
+    font-size: 24px;
+  }
+  .error-rdr__btn {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  img[alt=Sadie], img[alt=Arthur] {
+    display: none;
+  }
+  .error-rdr__title .code {
+    font-size: 110px;
+  }
+  .error-rdr__title .text {
+    font-size: 26px;
+  }
+  .error-rdr__text {
+    font-size: 20px;
+  }
+  .error-rdr__btn {
+    padding: 10px 24px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .error-rdr__title .code {
+    font-size: 80px;
+  }
+  .error-rdr__title .text {
+    font-size: 19px;
+    letter-spacing: 2px;
+  }
+  .error-rdr__text {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  .error-rdr__btn {
+    font-size: 16px;
+    padding: 8px 18px;
+  }
+  img[alt=Arthur] {
+    height: 55%;
+  }
+}/*# sourceMappingURL=style.css.map */
